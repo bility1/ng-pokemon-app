@@ -12,9 +12,9 @@ export class PokemonTypeColorPipe implements PipeTransform {
       case 'Feu':
         color ='red lighten-1';
         break;
-        case 'Eau':
+      case 'Eau':
           color ='blue lighten-1';
-          break;
+       break;
       case 'Plante':
         color ='green lighten-1';
           break;

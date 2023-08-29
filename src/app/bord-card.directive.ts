@@ -13,7 +13,7 @@ export class BordCardDirective {
     this.setBorder(this.initialColor);
    }
    @Input('pkmnBorderCard') borderColor: string;
-   @Input() pkmnBorderCard: string;
+   //@Input() pkmnBorderCard: string;
    @HostListener('mouseenter') onMouseEnter(){
     this.setBorder(this.borderColor|| this.defaultColor);
    }
@@ -22,11 +22,11 @@ export class BordCardDirective {
     this.setBorder(this.initialColor);
    }
 
- setHeight(height: number){
+ private setHeight(height: number){
   this.el.nativeElement.style.height =`${height}px`;
  }
 
- setBorder(color: string){
+ private setBorder(color: string){
   let border = 'solid 4px' + color;
   this.el.nativeElement.style.border =border;
  }
