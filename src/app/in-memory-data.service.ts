@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import {InMemoryDbService, RequestInfo} from 'angular-in-memory-web-api';
-import { Observable } from 'rxjs';
 import { POKEMONS } from './pokemon/mock-pokemon-list';
 
 @Injectable({
@@ -9,7 +8,8 @@ import { POKEMONS } from './pokemon/mock-pokemon-list';
 export class InMemoryDataService implements InMemoryDbService{
 
    createDb() {
-    return {POKEMONS};
+    const pokemons = POKEMONS;
+    return {pokemons};
    }
     
   
