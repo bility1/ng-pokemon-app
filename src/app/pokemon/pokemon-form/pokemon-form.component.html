@@ -17,7 +17,22 @@
                   Le nom du pokémon est requis (1-25).
             </div>
           </div>
-    
+    <!-- Pokemon picture -->
+    <div *ngif="isAddForm" class="form-group">
+      <label for="picture">Image</label>
+      <input type="text" class="form-control" id="name"
+              required
+              
+             [(ngModel)]="pokemon.picture" name="picture"
+             #name="ngModel">
+
+      <div [hidden]="picture.valid || name.pristine"
+            class="card-panel red accent-1">
+            L'image du pokemon est requise.
+      </div>
+    </div>
+
+
           <!-- Pokemon hp -->
           <div class="form-group">
             <label for="hp">Point de vie</label>
