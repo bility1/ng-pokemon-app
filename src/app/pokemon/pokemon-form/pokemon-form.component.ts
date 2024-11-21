@@ -13,6 +13,7 @@ export class PokemonFormComponent implements OnInit {
   types: string[];
   isAddForm: boolean;
 
+
   constructor(
     private pokemonService: PokemonService,
     private router: Router
@@ -59,7 +60,7 @@ onSubmit(){
 
 isTypesValid(type: string): Boolean {
 
-  if (this.pokemon.types.length ==1
+  if (this.pokemon.types.length == 1
       && this.hasType(type) )
   
   {
