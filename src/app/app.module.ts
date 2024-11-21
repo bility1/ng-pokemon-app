@@ -13,7 +13,7 @@ import { PokemonFormComponent } from './pokemon/pokemon-form/pokemon-form.compon
 @NgModule({
   declarations: [
     AppComponent,
-    PokemonFormComponent,
+
     PageNotFoundComponent
   ],
   imports: [

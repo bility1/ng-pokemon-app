@@ -20,11 +20,11 @@
     <!-- Pokemon picture -->
     <div *ngif="isAddForm" class="form-group">
       <label for="picture">Image</label>
-      <input type="text" class="form-control" id="name"
+      <input type="url" class="form-control" id="name"
               required
               
              [(ngModel)]="pokemon.picture" name="picture"
-             #name="ngModel">
+             #picture="ngModel">
 
       <div [hidden]="picture.valid || name.pristine"
             class="card-panel red accent-1">
@@ -96,7 +96,7 @@
     </div>
   </form>
   <h3 *ngIf="!pokemon" class="center">
-    <app-loader></app-loader>
+     <app-loader></app-loader>
   </h3>
 
 

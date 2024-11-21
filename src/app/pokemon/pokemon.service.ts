@@ -34,7 +34,7 @@ export class PokemonService {
     return this.http.delete(`api/pokemons/${pokemonId}`).pipe(
       tap((response) => this.log(response)),
       catchError((error) => this.handleError(error,null))
-    )
+    );
   } 
   addPokemon (pokemon: Pokemon): Observable<Pokemon>{
     const httpOptions = {
@@ -43,7 +43,7 @@ export class PokemonService {
     return this.http.post<Pokemon>('api/pokemons',pokemon,httpOptions).pipe(
       tap((response) => this.log(response)),
       catchError((error) => this.handleError(error,null))
-    )
+    );
   }
 
   searchPokemonList(term: string): Observable<Pokemon[]>{
@@ -62,7 +62,7 @@ export class PokemonService {
       catchError((error) => this.handleError(error, undefined)));
   }
 
-  private log(response: Pokemon[]|Pokemon|undefined){
+  private log(response: any){
     console.table(response);
   }
 

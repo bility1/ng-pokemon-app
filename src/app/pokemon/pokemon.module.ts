@@ -28,10 +28,10 @@ const pokemonRoutes: Routes = [
     ListPokemonComponent,
     DetailPokemonComponent,
     BordCardDirective,
+    PokemonFormComponent,
     PokemonTypeColorPipe,
     EditPokemonComponent,
     AddPokemonComponent,
-   PokemonFormComponent,
     SearchPokemonComponent,
     LoaderComponent,
   
