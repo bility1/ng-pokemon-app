@@ -27,3 +27,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 une API est une interface de communication
+
+Le déployement en production est réalisé sur Firebase hosting 
+ng build est utilisé pour la production pour les utilisateurs 
+Project Console: https://console.firebase.google.com/project/ng-pokemon-app-5cf8e/overview
+Hosting URL: https://ng-pokemon-app-5cf8e.web.app
